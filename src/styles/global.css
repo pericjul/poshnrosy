@@ -1,0 +1,37 @@
+/* === Custom Button Styles === */
+
+.btn-rosy {
+  background-color: #e89cae !important; /* Hauptfarbe */
+  color: white !important;
+  border: none !important;
+}
+
+.btn-rosy:hover {
+  background-color: #d9869b !important; /* etwas dunkler beim Hover */
+  color: white !important;
+}
+
+.btn-outline-rosy {
+  background-color: transparent !important;
+  border: 2px solid #e89cae !important;
+  color: #e89cae !important;
+}
+
+.btn-outline-rosy:hover {
+  background-color: #e89cae !important;
+  color: white !important;
+}
+
+/* === Alerts im Rosy-Stil === */
+.alert-rosy {
+  background-color: #fce4ec;       /* sanfter Rosa-Hintergrund */
+  color: #a63c66;                  /* dunkler Text */
+  border: 1px solid #f3b6c0;       /* rosa Rahmen */
+}
+
+/* === Main Layout Container === */
+main {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto; /* zentriert */
+}
