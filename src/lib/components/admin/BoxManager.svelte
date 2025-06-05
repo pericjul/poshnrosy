@@ -73,16 +73,6 @@
         required
       />
   
-      <!-- Bildupload -->
-      <label class="form-label">Bild hochladen</label>
-      <input
-        type="file"
-        name="image"
-        accept="image/*"
-        class="form-control mb-3"
-        required
-      />
-  
       <!-- Tags werden als kommagetrennte Liste gespeichert -->
       <input
         type="text"

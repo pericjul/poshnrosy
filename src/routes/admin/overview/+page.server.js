@@ -1,7 +1,5 @@
 import db from '$lib/server/db.js';
 import bcrypt from 'bcryptjs';
-import fs from 'fs';
-import path from 'path';
 
 // Lädt alle benötigten Daten (Boxen, Bestellungen, Benutzer:innen) parallel
 export async function load() {
@@ -59,21 +57,11 @@ export const actions = {
       message: ''
     };
 
-    // Bild verarbeiten und abspeichern
-    const image = data.get('image');
-    let imageUrl = '';
-
-    if (image && image.name) {
-      const fileName = `${Date.now()}-${image.name}`;
-      const filePath = path.join('static/images', fileName);
-      const buffer = Buffer.from(await image.arrayBuffer());
-
-      fs.writeFileSync(filePath, buffer); // Bild lokal speichern
-      imageUrl = `/images/${fileName}`;   // Pfad für Anzeige im Frontend
-    }
+    // Statt Bild hochladen: Platzhalter-Bild verwenden
+    const imageUrl = '/images/placeholder.jpg'; // Stelle sicher, dass dieses Bild in static/images liegt
 
     // Nur speichern, wenn alles gültig
-    if (name && !isNaN(price) && imageUrl) {
+    if (name && !isNaN(price)) {
       await db.createBox({ name, description, price, imageUrl, tags, defaultOptions });
       console.log('Neue Box erstellt:', name);
     }
