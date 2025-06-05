@@ -23,7 +23,7 @@
           <form method="POST">
             <input type="hidden" name="id" value={user._id} />
             <button type="submit" class="btn btn-outline-danger btn-sm" formaction="?/deleteUser">
-              Loeschen
+              Löschen
             </button>
           </form>
         </li>

@@ -35,7 +35,7 @@
                 class="btn btn-outline-danger btn-sm"
                 formaction="?/deleteBox"
               >
-                Loeschen
+                Löschen
               </button>
             </form>
           </div>
