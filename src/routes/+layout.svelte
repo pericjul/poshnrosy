@@ -1,6 +1,6 @@
 <script>
 	// Globale Layout-Komponenten einbinden
-	import Navbar from '$lib/components/layout/Navbar.svelte';
+	import Navbar from '$lib/components/layout/NavBar.svelte';
 	import Footer from '$lib/components/layout/Footer.svelte';
 
 	// Globale CSS-Datei importieren
